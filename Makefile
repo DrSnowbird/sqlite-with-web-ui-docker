@@ -96,7 +96,7 @@ push:
 		docker save $(REGISTRY_IMAGE):$(VERSION) | gzip > $(IMAGE_EXPORT_PATH)/$(DOCKER_NAME)_$(VERSION).tar.gz; \
 	fi
 	
-pull:
+pull-registry:
 	@if [ "$(REGISTRY_HOST)" = "" ]; then \
 		docker pull $(DOCKER_IMAGE):$(VERSION) ; \
 	else \
