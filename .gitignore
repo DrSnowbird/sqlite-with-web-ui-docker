@@ -3,6 +3,8 @@
 *.tmp
 *.swp
 
+*.crt
+
 *.tgz
 *.tar.gz
 *.zip
